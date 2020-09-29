@@ -9,13 +9,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.raj.trade.ohlc.reader.TradeInputDataReader;
 
 @SpringBootApplication
-public class OhlcAnalyticalServerApplication implements ApplicationRunner{
+public class OHLCAnalyticsServiceApplication implements ApplicationRunner{
 
 	@Autowired
 	private TradeInputDataReader tradeInputDataReader;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(OhlcAnalyticalServerApplication.class, args);
+		SpringApplication.run(OHLCAnalyticsServiceApplication.class, args);
 	}
 
 	@Override
