@@ -1,4 +1,4 @@
-package com.ohlc;
+package com.raj.trade.ohlc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -6,7 +6,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.ohlc.reader.TradeInputDataReader;
+import com.raj.trade.ohlc.reader.TradeInputDataReader;
 
 @SpringBootApplication
 public class OhlcAnalyticalServerApplication implements ApplicationRunner{

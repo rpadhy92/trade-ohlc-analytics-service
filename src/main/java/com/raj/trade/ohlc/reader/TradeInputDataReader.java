@@ -1,4 +1,4 @@
-package com.ohlc.reader;
+package com.raj.trade.ohlc.reader;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -8,8 +8,8 @@ import java.util.stream.Stream;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.ohlc.model.Trade;
-import com.ohlc.utils.JsonParser;
+import com.raj.trade.ohlc.model.Trade;
+import com.raj.trade.ohlc.utils.JsonParser;
 
 import lombok.extern.slf4j.Slf4j;
 

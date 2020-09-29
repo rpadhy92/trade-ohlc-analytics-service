@@ -1,4 +1,4 @@
-package com.ohlc.model;
+package com.raj.trade.ohlc.model;
 
 import java.time.Instant;
 
