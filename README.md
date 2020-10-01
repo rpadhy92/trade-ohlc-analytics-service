@@ -1,3 +1,5 @@
+#trade-ohlc-analytics-service
+
 CONTENTS OF THE FILE
 ---------------------
 
@@ -27,7 +29,7 @@ CONTENTS OF THE FILE
  2) DataStructure : Used LinkedBlockingQueue for inter thread communications  
  
  3) class & methods : 
- 		OHLCWebSocketHandler : handleTextMessage() - Listens User subscriptions
+ 		OHLCWebSocketHandler : handleTextMessage() - Listens User subscriptions.
  		TradeInputDataReader : readTradeDataForClientSubscriptionStocks(String filePath) - read subscriptions from subscription queue and read trades for the corresponding subscribed stock, sends trade data to OHLC FSM engine
  		OHLCPacketCreator : createOhlcPacket() - create and logs OHLC packets 
  		
@@ -39,8 +41,8 @@ CONTENTS OF THE FILE
  	Note : Placed the trades.json file in resources folder to test easily. But this should be kept outside and reference should be given for the file to read
  2) go to http://localhost:9091 from browser, This will open a html page 
  3) Click on "connect to websocket server" button to connect to websocket
- 4) enter subscription message in text box then click on "Send" button
- 	subscription message example - {"event": "subscribe", "symbol": "XXBTZUSD", "interval": 15} 
+ 4) enter subscription message in text box then click on "Send" button. 
+ 	e.g subscriptiom message - {"event": "subscribe", "symbol": "XXBTZUSD", "interval": 15} 
  	NOTE : Proper validations has not been done. Give the subscription in this format only 
  5) Check the application log for OHLC packets
  
