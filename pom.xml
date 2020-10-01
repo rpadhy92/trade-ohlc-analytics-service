@@ -9,11 +9,12 @@
 		<version>2.2.10.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>OHLC-analytical-server</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>OHLC-analytical-server</name>
+	<groupId>com.raj.trade.ohlc</groupId>
+	<artifactId>trade-ohlc-analytics-service</artifactId>
+	<version>1.0-RELEASE</version>
+	<name>trade-ohlc-analytics-service</name>
 	<description>OHLC Analytical Server</description>
+	<packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -36,6 +37,12 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
 
 
 		<dependency>
@@ -52,6 +59,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>trade-ohlc-analytics-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

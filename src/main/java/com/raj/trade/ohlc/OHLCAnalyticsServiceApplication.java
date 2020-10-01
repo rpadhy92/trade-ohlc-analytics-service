@@ -6,13 +6,17 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.raj.trade.ohlc.reader.TradeInputDataReader;
+import com.raj.trade.ohlc.process.manager.OHLCAnalyticsProcessManager;
 
+/**
+ * The Class OHLCAnalyticsServiceApplication.
+ * Application class to start the service
+ */
 @SpringBootApplication
 public class OHLCAnalyticsServiceApplication implements ApplicationRunner{
 
 	@Autowired
-	private TradeInputDataReader tradeInputDataReader;
+	private OHLCAnalyticsProcessManager ohlcAnalyticsProcessManager;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(OHLCAnalyticsServiceApplication.class, args);
@@ -20,7 +24,7 @@ public class OHLCAnalyticsServiceApplication implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		tradeInputDataReader.readTradeData();
+		ohlcAnalyticsProcessManager.startOhlcProcess();
 	}
 
 }

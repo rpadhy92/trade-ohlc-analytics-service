@@ -9,6 +9,9 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * The Class Trade.
+ */
 @Getter
 @Setter
 public class Trade {
@@ -39,7 +42,6 @@ public class Trade {
 	private Instant timeStamp2;
 	
 	public void setTimeStamp2(long timeStamp2) {
-		this.timeStamp2 = Instant.ofEpochMilli(timeStamp2);
+		this.timeStamp2 = Instant.ofEpochMilli((timeStamp2/1000000));
 	}
-
 }
